@@ -1,0 +1,88 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Main Hero Background Image",
+      "imageUrl": "https://i.postimg.cc/dDcssKQK/newrenew.png",
+      "imageHint": "luxury car workshop"
+    },
+    {
+      "id": "service-bodywork",
+      "description": "Car Bodywork Service",
+      "imageUrl": "https://i.postimg.cc/gk6QNKgw/samkra2.png",
+      "imageHint": "car bodywork"
+    },
+    {
+      "id": "service-painting",
+      "description": "Car Painting Service",
+      "imageUrl": "https://i.postimg.cc/GhsVqjXt/samkra.png",
+      "imageHint": "car painting oven"
+    },
+    {
+      "id": "service-mechanic",
+      "description": "Car Mechanic Service",
+      "imageUrl": "https://i.postimg.cc/59rDBrqP/ورشة_تصليح_السيارات_في_العمل.png",
+      "imageHint": "car mechanic workshop"
+    },
+    {
+      "id": "service-electricity",
+      "description": "Car Electricity Service",
+      "imageUrl": "https://i.postimg.cc/pr37P9Ln/فحص_النظام_الكهربائي_للسيارة.png",
+      "imageHint": "car electricity diagnostic"
+    },
+    {
+      "id": "service-ac",
+      "description": "Car AC Service",
+      "imageUrl": "https://i.postimg.cc/SRH5mXxY/فني_صيانة_يضبط_تكييف_السيارة.png",
+      "imageHint": "car air conditioning"
+    },
+    {
+      "id": "service-airbag",
+      "description": "Airbag Repair Service",
+      "imageUrl": "https://i.postimg.cc/KcWCPWDX/إصلاح_الوسادة_الهوائية_في_السيارات.png",
+      "imageHint": "car airbag"
+    },
+    {
+      "id": "service-renewal",
+      "description": "Car Renewal Service",
+      "imageUrl": "https://i.postimg.cc/Hs7RBt6x/ترميم_بورشه_911_في_الورشة.png",
+      "imageHint": "porsche restoration"
+    },
+    {
+      "id": "ba-1-before",
+      "description": "Before repair case 1 - Mercedes Side Impact",
+      "imageUrl": "https://i.postimg.cc/WzxKsD1r/سيارة_مرسيدس_متضررة_في_ورشة_إصلاح_(1).png",
+      "imageHint": "damaged mercedes"
+    },
+    {
+      "id": "ba-1-after",
+      "description": "After repair case 1 - Mercedes Side Impact",
+      "imageUrl": "https://i.postimg.cc/HnFKTJkd/مرسيدس_بنز_في_ورشة_إصلاح_محترفة.png",
+      "imageHint": "fixed mercedes"
+    },
+    {
+      "id": "ba-2-before",
+      "description": "Before repair case 2 - Lexus RX Front Bumper",
+      "imageUrl": "https://i.postimg.cc/3NkVMjYh/سيارة_ليكزس_RX_متضررة_في_ورشة_الصيانة.png",
+      "imageHint": "damaged lexus bumper"
+    },
+    {
+      "id": "ba-2-after",
+      "description": "After repair case 2 - Lexus RX Front Bumper",
+      "imageUrl": "https://i.postimg.cc/7Jym025s/سيارة_لكزس_RX_داخل_ورشة_تصليح.png",
+      "imageHint": "fixed lexus bumper"
+    },
+    {
+      "id": "ba-3-before",
+      "description": "Before repair case 3 - BMW 3 Series Rear Damage",
+      "imageUrl": "https://i.postimg.cc/fyVp47DZ/BMW_3_سيريز_بأضرار_جسيمة_في_ورشة.png",
+      "imageHint": "damaged bmw rear"
+    },
+    {
+      "id": "ba-3-after",
+      "description": "After repair case 3 - BMW 3 Series Rear Restoration",
+      "imageUrl": "https://i.postimg.cc/T1KF8jfX/سيارة_بي_إم_دبليو_بيضاء_بعد_الإصلاح.png",
+      "imageHint": "fixed bmw rear"
+    }
+  ]
+}
