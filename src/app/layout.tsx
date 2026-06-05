@@ -115,7 +115,7 @@ export default function RootLayout({
     "image": "https://i.postimg.cc/dDcssKQK/newrenew.png",
     "@id": "https://designalriyadh.vip",
     "url": "https://designalriyadh.vip",
-    "telephone": "0504390007",
+    "telephone": "0532526276",
     "priceRange": "$$",
     "hasMap": "https://maps.app.goo.gl/LLBYi4yGaBtMqJpe7",
     "address": {
@@ -152,7 +152,7 @@ export default function RootLayout({
       <head>
         {/* Google Tag (gtag.js) */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18086622285"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17281020875"
           strategy="afterInteractive"
         />
         <Script id="google-ads-tag" strategy="afterInteractive">
@@ -160,14 +160,14 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-18086622285');
+            gtag('config', 'AW-17281020875');
           `}
         </Script>
         
         {/* Event snippet for مشاهدة صفحة conversion page */}
         <Script id="google-conversion-tag" strategy="afterInteractive">
           {`
-            gtag('event', 'conversion', {'send_to': 'AW-18086622285/PFOKCKf2j50cEM3or7BD'});
+            gtag('event', 'conversion', {'send_to': 'AW-17281020875/PFOKCKf2j50cEM3or7BD'});
           `}
         </Script>
         

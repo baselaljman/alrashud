@@ -34,12 +34,12 @@ export function Hero() {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 w-full sm:w-auto shadow-lg shadow-primary/20">
-            <a href="tel:0504390007">
+            <a href="tel:0532526276">
               <Phone className="ml-2 h-5 w-5" /> اتصل بنا للحصول على عرض سعر
             </a>
           </Button>
           <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white text-lg px-8 py-6 w-full sm:w-auto shadow-lg shadow-green-500/20">
-            <a href="https://wa.me/966504390007" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/966532526276" target="_blank" rel="noopener noreferrer">
               <MessageSquare className="ml-2 h-5 w-5" /> استفسر عبر الواتساب
             </a>
           </Button>

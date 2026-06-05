@@ -66,7 +66,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#FDD60C] shrink-0" />
-                <a href="tel:0504390007" className="hover:text-white transition-colors" dir="ltr">0504390007</a>
+                <a href="tel:0532526276" className="hover:text-white transition-colors" dir="ltr">0532526276</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-[#FDD60C] shrink-0" />

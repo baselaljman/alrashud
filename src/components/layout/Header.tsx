@@ -65,7 +65,7 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <Button variant="default" className="hidden md:flex" asChild>
-            <a href="tel:0504390007">احجز موعدك</a>
+            <a href="tel:0532526276">احجز موعدك</a>
           </Button>
           
           {/* Mobile Nav */}
@@ -99,7 +99,7 @@ export function Header() {
                   <Link href="#before-after" className="text-lg font-medium border-b pb-2">قبل وبعد</Link>
                   <Link href="#features" className="text-lg font-medium border-b pb-2">لماذا نحن؟</Link>
                   <Button className="w-full mt-4" asChild>
-                    <a href="tel:0504390007">اتصل الآن</a>
+                    <a href="tel:0532526276">اتصل الآن</a>
                   </Button>
                 </div>
               </SheetContent>

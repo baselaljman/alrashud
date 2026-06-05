@@ -8,7 +8,7 @@ export function FloatingContact() {
     <div className="fixed bottom-6 left-6 z-[60] flex flex-col gap-4 items-start">
       {/* WhatsApp Button - Permanently Extended */}
       <a 
-        href="https://wa.me/966504390007"
+        href="https://wa.me/966532526276"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-3 bg-[#25D366] text-white rounded-full px-5 py-3 shadow-2xl hover:scale-105 transition-all duration-300 border border-white/20"
@@ -24,7 +24,7 @@ export function FloatingContact() {
 
       {/* Phone Button - Permanently Extended & Pulsing */}
       <a 
-        href="tel:0504390007"
+        href="tel:0532526276"
         className="flex items-center gap-3 bg-primary text-white rounded-full px-5 py-3 shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse border border-white/20"
         aria-label="Call Us"
       >
