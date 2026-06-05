@@ -56,12 +56,12 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#FDD60C] shrink-0" />
                 <a 
-                  href="https://maps.app.goo.gl/LLBYi4yGaBtMqJpe7" 
+                  href="https://maps.google.com/?q=صناعية+العروبة+الرياض" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  الرياض، الصناعية القديمة
+                  الرياض، صناعية العروبة
                 </a>
               </li>
               <li className="flex items-center gap-3">
