@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
     <main className="min-h-screen">
       <Header />
       <div className="container mx-auto px-4 py-20 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8 text-primary">سياسة الخصوصية</h1>
+        <h1 className="text-4xl font-bold mb-8 text-[#FF1E1E] glow-red-subtle">سياسة الخصوصية</h1>
         <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
           <p>نحن في <strong>الرشود</strong> نقدر خصوصيتكم ونلتزم بحماية بياناتكم الشخصية. توضح هذه السياسة كيفية جمعنا واستخدامنا لمعلوماتكم.</p>
           

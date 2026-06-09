@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, ChevronDown, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { handleContactClick } from '@/lib/utils';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -65,7 +66,12 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <Button variant="default" className="hidden md:flex" asChild>
-            <a href="tel:0532526276">احجز موعدك</a>
+            <a 
+              href="tel:0532526276"
+              onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
+            >
+              احجز موعدك
+            </a>
           </Button>
           
           {/* Mobile Nav */}
@@ -99,7 +105,12 @@ export function Header() {
                   <Link href="#before-after" className="text-lg font-medium border-b pb-2">قبل وبعد</Link>
                   <Link href="#features" className="text-lg font-medium border-b pb-2">لماذا نحن؟</Link>
                   <Button className="w-full mt-4" asChild>
-                    <a href="tel:0532526276">اتصل الآن</a>
+                    <a 
+                      href="tel:0532526276"
+                      onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
+                    >
+                      اتصل الآن
+                    </a>
                   </Button>
                 </div>
               </SheetContent>

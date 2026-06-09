@@ -26,7 +26,7 @@ export function BeforeAfter() {
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-secondary">إبداعاتنا</Badge>
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">معرض الأعمال (قبل وبعد)</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#FF1E1E] glow-red">معرض الأعمال (قبل وبعد)</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             شاهد نتائج احترافيتنا في إصلاح السيارات وتجديدها بأدق التفاصيل. اضغط على الصور لتكبيرها.
           </p>
@@ -62,7 +62,7 @@ export function BeforeAfter() {
                         </div>
                       </div>
                       <div className="p-4 bg-white">
-                        <h3 className="font-bold text-lg">{item.title}</h3>
+                        <h3 className="font-bold text-lg text-[#FF1E1E] glow-red-subtle">{item.title}</h3>
                         <p className="text-xs text-muted-foreground">عرض التفاصيل والمقارنة</p>
                       </div>
                     </div>
@@ -133,7 +133,7 @@ export function BeforeAfter() {
                     </div>
                   </div>
                   <div className="p-4 bg-white">
-                    <h3 className="font-bold text-lg">{item.title}</h3>
+                    <h3 className="font-bold text-lg text-[#FF1E1E] glow-red-subtle">{item.title}</h3>
                   </div>
                 </div>
               )}

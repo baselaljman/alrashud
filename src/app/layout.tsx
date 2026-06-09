@@ -170,6 +170,29 @@ export default function RootLayout({
             gtag('event', 'conversion', {'send_to': 'AW-17281020875/PFOKCKf2j50cEM3or7BD'});
           `}
         </Script>
+
+        {/* Event snippet for جهة اتصال conversion page */}
+        <Script id="google-contact-conversion-tag" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              if (window.gtag) {
+                window.gtag('event', 'conversion', {
+                  'send_to': 'AW-17281020875/PPm7CJ2r9rkcEMvnnbBA',
+                  'event_callback': callback
+                });
+              } else if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+              return false;
+            }
+            window.gtag_report_conversion = gtag_report_conversion;
+          `}
+        </Script>
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

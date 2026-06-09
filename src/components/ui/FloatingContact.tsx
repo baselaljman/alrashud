@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { MessageCircle, PhoneCall } from 'lucide-react';
+import { handleContactClick } from '@/lib/utils';
 
 export function FloatingContact() {
   return (
@@ -11,6 +12,7 @@ export function FloatingContact() {
         href="https://wa.me/966532526276"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={(e) => handleContactClick(e, "https://wa.me/966532526276", true)}
         className="flex items-center gap-3 bg-[#25D366] text-white rounded-full px-5 py-3 shadow-2xl hover:scale-105 transition-all duration-300 border border-white/20"
         aria-label="WhatsApp Us"
       >
@@ -25,6 +27,7 @@ export function FloatingContact() {
       {/* Phone Button - Permanently Extended & Pulsing */}
       <a 
         href="tel:0532526276"
+        onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
         className="flex items-center gap-3 bg-primary text-white rounded-full px-5 py-3 shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse border border-white/20"
         aria-label="Call Us"
       >

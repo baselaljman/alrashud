@@ -9,7 +9,7 @@ export function BrandSlider() {
   return (
     <section className="py-16 bg-white border-t border-b overflow-hidden">
       <div className="container px-4 mx-auto mb-8">
-        <h3 className="text-center text-xl font-bold text-muted-foreground uppercase tracking-widest">الماركات التي نخدمها</h3>
+        <h3 className="text-center text-xl font-bold text-[#FF1E1E] glow-red-subtle uppercase tracking-widest">الماركات التي نخدمها</h3>
       </div>
       <div className="relative flex overflow-x-hidden">
         <div className="py-4 animate-marquee whitespace-nowrap flex gap-16 items-center">

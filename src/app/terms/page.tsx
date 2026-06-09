@@ -7,7 +7,7 @@ export default function TermsOfService() {
     <main className="min-h-screen">
       <Header />
       <div className="container mx-auto px-4 py-20 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8 text-primary">شروط الخدمة</h1>
+        <h1 className="text-4xl font-bold mb-8 text-[#FF1E1E] glow-red-subtle">شروط الخدمة</h1>
         <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
           <p>باستخدامكم لموقع <strong>الرشود</strong>، فإنكم توافقون على الالتزام بالشروط التالية:</p>
           

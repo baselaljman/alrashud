@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Car, MapPin, Phone, Mail, Instagram, Twitter } from 'lucide-react';
+import { handleContactClick } from '@/lib/utils';
 
 export function Footer() {
   return (
@@ -30,7 +31,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-6">روابط هامة</h4>
+            <h4 className="text-xl font-bold mb-6 text-[#FF1E1E] glow-red-subtle">روابط هامة</h4>
             <ul className="space-y-4 text-white/70">
               <li><Link href="/" className="hover:text-white transition-colors">الرئيسية</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">سياسة الخصوصية</Link></li>
@@ -40,7 +41,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-6">خدماتنا</h4>
+            <h4 className="text-xl font-bold mb-6 text-[#FF1E1E] glow-red-subtle">خدماتنا</h4>
             <ul className="space-y-4 text-white/70">
               <li>السمكرة والدهان</li>
               <li>ميكانيكا وكهرباء</li>
@@ -51,7 +52,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-6">تواصل معنا</h4>
+            <h4 className="text-xl font-bold mb-6 text-[#FF1E1E] glow-red-subtle">تواصل معنا</h4>
             <ul className="space-y-6 text-white/70">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#FDD60C] shrink-0" />
@@ -66,7 +67,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#FDD60C] shrink-0" />
-                <a href="tel:0532526276" className="hover:text-white transition-colors" dir="ltr">0532526276</a>
+                <a 
+                  href="tel:0532526276" 
+                  onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
+                  className="hover:text-white transition-colors" 
+                  dir="ltr"
+                >
+                  0532526276
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-[#FDD60C] shrink-0" />
