@@ -25,7 +25,7 @@ export function Hero() {
       
       <div className="container relative z-20 px-4 mx-auto text-center">
         <h1 className="text-4xl md:text-7xl font-bold mb-6 tracking-tight text-white leading-tight">
-          مركز <span className="text-[#FF1E1E] glow-red animate-pulse">الرشود</span>
+          مركز <span className="text-[#FDD60C] glow-yellow animate-pulse">الرشود</span>
           <br />
           لسمكرة ودهان السيارات
         </h1>

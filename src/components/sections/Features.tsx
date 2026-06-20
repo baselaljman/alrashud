@@ -12,7 +12,7 @@ export function Features() {
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center p-8 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow">
               <div className="text-5xl mb-6">{feature.icon}</div>
-              <h3 className="text-2xl font-bold mb-4 text-[#FF1E1E] glow-red-subtle">{feature.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#0F172A] border-b-2 border-[#FDD60C] pb-2 inline-block px-4">{feature.title}</h3>
               <p className="text-muted-foreground leading-relaxed">
                 {feature.description}
               </p>

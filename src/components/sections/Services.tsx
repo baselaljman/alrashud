@@ -26,7 +26,9 @@ export function Services() {
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-primary border-primary">خدماتنا المتخصصة</Badge>
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#FF1E1E] glow-red">ماذا نقدم في مركز الرشود؟</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#0F172A]">
+            ماذا نقدم في <span className="text-[#FDD60C] glow-yellow bg-[#0F172A] px-4 py-1.5 rounded-xl inline-block mt-2 md:mt-0 shadow-lg">مركز الرشود؟</span>
+          </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             نقدم حزمة متكاملة من حلول صيانة السيارات باستخدام أحدث التقنيات لضمان أفضل النتائج.
           </p>
@@ -86,7 +88,7 @@ export function Services() {
                 </div>
               )}
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-[#FF1E1E] glow-red-subtle">{service.title}</CardTitle>
+                <CardTitle className="text-xl font-bold text-[#0F172A] border-r-4 border-[#FDD60C] pr-3">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">

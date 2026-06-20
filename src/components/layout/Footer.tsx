@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-6 text-[#FF1E1E] glow-red-subtle">روابط هامة</h4>
+            <h4 className="text-xl font-bold mb-6 text-white border-r-4 border-[#FDD60C] pr-3">روابط هامة</h4>
             <ul className="space-y-4 text-white/70">
               <li><Link href="/" className="hover:text-white transition-colors">الرئيسية</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">سياسة الخصوصية</Link></li>
@@ -41,7 +41,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-6 text-[#FF1E1E] glow-red-subtle">خدماتنا</h4>
+            <h4 className="text-xl font-bold mb-6 text-white border-r-4 border-[#FDD60C] pr-3">خدماتنا</h4>
             <ul className="space-y-4 text-white/70">
               <li>السمكرة والدهان</li>
               <li>ميكانيكا وكهرباء</li>
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xl font-bold mb-6 text-[#FF1E1E] glow-red-subtle">تواصل معنا</h4>
+            <h4 className="text-xl font-bold mb-6 text-white border-r-4 border-[#FDD60C] pr-3">تواصل معنا</h4>
             <ul className="space-y-6 text-white/70">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#FDD60C] shrink-0" />
