@@ -36,18 +36,18 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 w-full sm:w-auto shadow-lg shadow-primary/20">
             <a 
-              href="tel:0532526276"
-              onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
+              href="tel:0565218059"
+              onClick={(e) => handleContactClick(e, "tel:0565218059", false)}
             >
               <Phone className="ml-2 h-5 w-5" /> اتصل بنا للحصول على عرض سعر
             </a>
           </Button>
           <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white text-lg px-8 py-6 w-full sm:w-auto shadow-lg shadow-green-500/20">
             <a 
-              href="https://wa.me/966532526276" 
+              href="https://wa.me/966565218059" 
               target="_blank" 
               rel="noopener noreferrer"
-              onClick={(e) => handleContactClick(e, "https://wa.me/966532526276", true)}
+              onClick={(e) => handleContactClick(e, "https://wa.me/966565218059", true)}
             >
               <MessageSquare className="ml-2 h-5 w-5" /> استفسر عبر الواتساب
             </a>

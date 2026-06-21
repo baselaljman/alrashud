@@ -68,12 +68,12 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#FDD60C] shrink-0" />
                 <a 
-                  href="tel:0532526276" 
-                  onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
+                  href="tel:0565218059" 
+                  onClick={(e) => handleContactClick(e, "tel:0565218059", false)}
                   className="hover:text-white transition-colors" 
                   dir="ltr"
                 >
-                  0532526276
+                  0565218059
                 </a>
               </li>
               <li className="flex items-center gap-3">
