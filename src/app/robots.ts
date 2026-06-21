@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: ['/api/'],
     },
-    sitemap: 'https://designalriyadh.vip/sitemap.xml',
+    sitemap: 'https://www.alrashwd.com/sitemap.xml',
   };
 }

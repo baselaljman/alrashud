@@ -77,12 +77,12 @@ export const metadata: Metadata = {
     'مركز الرشود لصيانة السيارات', 'خدمات صيانة سيارات متكاملة'
   ].join(', '),
   alternates: {
-    canonical: 'https://designalriyadh.vip',
+    canonical: 'https://www.alrashwd.com',
   },
   openGraph: {
     title: 'الرشود - خبراء السمكرة والدهان وصيانة السيارات',
     description: 'نقدم خدمات السمكرة والدهان والميكانيكا والتعديل البارد بأعلى جودة مع ضمان 5 سنوات في الرياض.',
-    url: 'https://designalriyadh.vip',
+    url: 'https://www.alrashwd.com',
     siteName: 'الرشود',
     images: [
       {
@@ -113,8 +113,8 @@ export default function RootLayout({
     "@type": "AutoRepair",
     "name": "الرشود لصيانة السيارات والسمكرة والدهان",
     "image": "https://i.postimg.cc/dDcssKQK/newrenew.png",
-    "@id": "https://designalriyadh.vip",
-    "url": "https://designalriyadh.vip",
+    "@id": "https://www.alrashwd.com",
+    "url": "https://www.alrashwd.com",
     "telephone": "0565218059",
     "priceRange": "$$",
     "hasMap": "https://maps.google.com/?q=صناعية+العروبة+الرياض",
