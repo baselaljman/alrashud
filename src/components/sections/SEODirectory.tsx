@@ -80,12 +80,20 @@ export function SEODirectory() {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
+  // If searching, show up to 80 matches. If not searching, show 12 items by default when closed, and all 800+ when open.
   const filteredPhrases = searchQuery
-    ? allSEOPhrases.filter(p => p.includes(searchQuery)).slice(0, 50)
-    : allSEOPhrases.slice(0, 150); // Show top 150 by default to prevent DOM bloat during load, list all in metadata or invisible tag for Google crawler
+    ? allSEOPhrases.filter(p => p.includes(searchQuery)).slice(0, 80)
+    : (isOpen ? allSEOPhrases : allSEOPhrases.slice(0, 12));
 
   return (
     <section id="seo-directory" className="py-16 bg-slate-50 border-t border-slate-200">
+      {/* Invisible crawler list specifically designed to guarantee maximum deep-indexation on Google Search Console */}
+      <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>
+        {allSEOPhrases.map((phrase, idx) => (
+          <span key={`crawler-${idx}`}>{phrase}, </span>
+        ))}
+      </div>
+
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto text-center mb-10">
           <Badge variant="outline" className="mb-3 text-[#FDD60C] bg-[#0F172A] border-transparent px-3 py-1 text-sm font-semibold">
@@ -143,7 +151,9 @@ export function SEODirectory() {
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-6 border-b pb-6">
             <div>
               <h3 className="text-lg font-bold text-slate-900">البحث في دليل الأحياء ومفردات الخدمات بالرياض</h3>
-              <p className="text-xs text-muted-foreground mt-1">تصفح الكلمات البحثية والفرعية لخدمات الرشود</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                {searchQuery ? `تم العثور على ${filteredPhrases.length} كلمة بحثية مطابقة` : 'تصفح الكلمات البحثية المقترحة أو ابحث'}
+              </p>
             </div>
             
             <div className="relative w-full md:w-80">
@@ -158,7 +168,7 @@ export function SEODirectory() {
             </div>
           </div>
 
-          {/* Interactive view with 150 terms by default */}
+          {/* Interactive view with 12 terms by default or expanded */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
             {filteredPhrases.map((phrase, idx) => (
               <div 
@@ -172,44 +182,25 @@ export function SEODirectory() {
             ))}
           </div>
 
-          {/* Hidden full list of 800+ terms purely optimize for Search Engine Crawlers Googlebot, preserving beautiful UX */}
-          {!isOpen && (
-            <div className="mt-6 text-center">
+          {/* Collapsible Action Trigger if not searching */}
+          {!searchQuery && (
+            <div className="mt-8 text-center border-t border-slate-100 pt-6">
               <button 
-                onClick={() => setIsOpen(true)}
-                className="bg-slate-900 text-white font-medium hover:bg-slate-800 text-xs px-5 py-2.5 rounded-xl inline-flex items-center gap-2 shadow-md transition-all"
-                id="btn-show-all-seo-coverage"
+                onClick={() => setIsOpen(!isOpen)}
+                className="bg-slate-900 text-white font-medium hover:bg-slate-800 text-xs px-6 py-3 rounded-xl inline-flex items-center gap-2 shadow-md transition-all active:scale-95"
+                id="btn-toggle-seo-coverage"
               >
-                عرض كافة الـ 800+ عبارات استهدافية ومناطق الأرشفة للرياض <ChevronDown className="h-4 w-4" />
+                {isOpen ? (
+                  <>
+                    تقليص قائمة الكلمات البحثية وتغطية الأحياء <ChevronUp className="h-4 w-4 text-[#FDD60C]" />
+                  </>
+                ) : (
+                  <>
+                    تصفح كافة الـ 800+ عبارة استهدافية ومناطق الأرشيف للرياض <ChevronDown className="h-4 w-4 text-[#FDD60C]" />
+                  </>
+                )}
               </button>
             </div>
-          )}
-
-          {isOpen && (
-            <>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4 pt-4 border-t border-dashed">
-                {allSEOPhrases.slice(150).map((phrase, idx) => (
-                  <div 
-                    key={idx + 150} 
-                    className="text-[11px] text-slate-500 py-1.5 px-2.5 bg-slate-50 border border-slate-100 rounded-lg flex items-center gap-1.5"
-                    id={`seo-tag-all-${idx}`}
-                  >
-                    <div className="w-1 h-1 rounded-full bg-slate-400 shrink-0" />
-                    <span className="truncate" title={phrase}>{phrase}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-8 text-center">
-                <button 
-                  onClick={() => setIsOpen(false)}
-                  className="bg-slate-950 text-white font-medium hover:bg-slate-800 text-xs px-5 py-2.5 rounded-xl inline-flex items-center gap-2 transition-all"
-                  id="btn-collapse-seo-coverage"
-                >
-                  تقليص القائمة التبويبية <ChevronUp className="h-4 w-4" />
-                </button>
-              </div>
-            </>
           )}
         </div>
       </div>
