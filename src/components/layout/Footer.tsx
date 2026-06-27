@@ -69,20 +69,20 @@ export function Footer() {
                 <Phone className="h-5 w-5 text-[#FDD60C] shrink-0 mt-0.5" />
                 <div className="flex flex-col gap-1">
                   <a 
+                    href="tel:0532526276" 
+                    onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
+                    className="hover:text-white transition-colors block font-semibold text-white" 
+                    dir="ltr"
+                  >
+                    0532526276 (أساسي)
+                  </a>
+                  <a 
                     href="tel:0565218059" 
                     onClick={(e) => handleContactClick(e, "tel:0565218059", false)}
-                    className="hover:text-white transition-colors block" 
+                    className="hover:text-white transition-colors block text-white/70 text-sm" 
                     dir="ltr"
                   >
                     0565218059
-                  </a>
-                  <a 
-                    href="tel:0532526276" 
-                    onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
-                    className="hover:text-white transition-colors block" 
-                    dir="ltr"
-                  >
-                    0532526276
                   </a>
                 </div>
               </li>

@@ -115,7 +115,7 @@ export default function RootLayout({
     "image": "https://i.postimg.cc/dDcssKQK/newrenew.png",
     "@id": "https://www.alrashwd.com",
     "url": "https://www.alrashwd.com",
-    "telephone": "0565218059",
+    "telephone": "0532526276",
     "priceRange": "$$",
     "hasMap": "https://maps.google.com/?q=صناعية+العروبة+الرياض",
     "address": {

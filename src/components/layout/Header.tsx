@@ -67,8 +67,8 @@ export function Header() {
         <div className="flex items-center gap-4">
           <Button variant="default" className="hidden md:flex" asChild>
             <a 
-              href="tel:0565218059"
-              onClick={(e) => handleContactClick(e, "tel:0565218059", false)}
+              href="tel:0532526276"
+              onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
             >
               احجز موعدك
             </a>
@@ -106,8 +106,8 @@ export function Header() {
                   <Link href="#features" className="text-lg font-medium border-b pb-2">لماذا نحن؟</Link>
                   <Button className="w-full mt-4" asChild>
                     <a 
-                      href="tel:0565218059"
-                      onClick={(e) => handleContactClick(e, "tel:0565218059", false)}
+                      href="tel:0532526276"
+                      onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
                     >
                       اتصل الآن
                     </a>

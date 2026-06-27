@@ -9,10 +9,10 @@ export function FloatingContact() {
     <div className="fixed bottom-6 left-6 z-[60] flex flex-col gap-4 items-start">
       {/* WhatsApp Button - Permanently Extended */}
       <a 
-        href="https://wa.me/966565218059"
+        href="https://wa.me/966532526276"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={(e) => handleContactClick(e, "https://wa.me/966565218059", true)}
+        onClick={(e) => handleContactClick(e, "https://wa.me/966532526276", true)}
         className="flex items-center gap-3 bg-[#25D366] text-white rounded-full px-5 py-3 shadow-2xl hover:scale-105 transition-all duration-300 border border-white/20"
         aria-label="WhatsApp Us"
       >
@@ -26,8 +26,8 @@ export function FloatingContact() {
 
       {/* Phone Button - Permanently Extended & Pulsing */}
       <a 
-        href="tel:0565218059"
-        onClick={(e) => handleContactClick(e, "tel:0565218059", false)}
+        href="tel:0532526276"
+        onClick={(e) => handleContactClick(e, "tel:0532526276", false)}
         className="flex items-center gap-3 bg-primary text-white rounded-full px-5 py-3 shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse border border-white/20"
         aria-label="Call Us"
       >
